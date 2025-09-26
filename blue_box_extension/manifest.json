@@ -1,0 +1,9 @@
+{
+  "name": "Blue Box Demo",
+  "description": "Shows a blue box",
+  "version": "1.0",
+  "manifest_version": 3,
+  "action": {
+    "default_popup": "popup.html"
+  }
+}
