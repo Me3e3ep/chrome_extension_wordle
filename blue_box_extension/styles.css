@@ -1,11 +1,12 @@
 .box {
-    width: 1000px;
-    height: 1000px;
-    background-color: blue;
+    width: 20rem;
+    height: 20rem;
+    background-color: rgb(230, 230, 239);
     }
 
 button {
     padding: 8px 12px;
-    
-
+    display: flex;
+    flex-direction: table-column;
+    align-items: center;
 }
