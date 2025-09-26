@@ -1,3 +1,8 @@
-document.getElementById("myButton").addEventListener("click", () => {
-  alert("You clicked the button inside the blue box!");
+let count = 0;
+const numberDisplay = document.getElementById("number");
+const button = document.getElementById("myButton");
+
+button.addEventListener("click", () => {
+  count++;
+  numberDisplay.textContent = count;
 });
