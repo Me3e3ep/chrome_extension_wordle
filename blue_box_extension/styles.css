@@ -1,21 +1,12 @@
-
 .box {
     width: 20rem;
     height: 20rem;
     background-color: rgb(230, 230, 239);
-    justify-content: center; /* horizontal */
-    display: flex;
-    flex-direction: column;
-    align-items: center;      /* center horizontally */
     }
 
 button {
-    position: absolute;
     padding: 8px 12px;
-    top: 75%;
-    
-
-    
+    display: flex;
+    flex-direction: table-column;
+    align-items: center;
 }
-
-
