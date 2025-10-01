@@ -8,9 +8,13 @@ let count = 0;
 function checkUserInput(word) {
   let wordLength = word.length;
   console.log("the word length is: " + wordLength);
-  if (word.length > 5) {
+  if (word.length === 5) {
     console.log("")
-    numberDisplay.textContent = "your text is more than 5 words";
+    numberDisplay.textContent = "Your text is 5 letters";
+  }
+  else {
+    console.log("")
+    numberDisplay.textContent = "Your text needs to be 5 letters";
   }
 }
 
