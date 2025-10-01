@@ -1,8 +1,31 @@
-let count = 0;
 const numberDisplay = document.getElementById("number");
-const button = document.getElementById("myButton");
+const clickMeButton = document.getElementById("myButton");
+const userBoxElement = document.getElementById("wordBox");
 
-button.addEventListener("click", () => {
+// On screen counter variable
+let count = 0;
+
+let userTextInput = userBoxElement.value
+
+function checkUserInput(word) {
+  console.log("running function, word: " + userTextInput);
+  console.log(typeof userTextInput)
+  console.log(word)
+  let wordLength = word.length;
+  console.log("the word length is: " + wordLength);
+  if (word.length > 5) {
+    console.log("")
+    numberDisplay.textContent = "your text is more than 5 words";
+  }
+}
+
+// When the button is clicked
+clickMeButton.addEventListener("click", () => {
   count++;
-  numberDisplay.textContent = count;
+  //numberDisplay.textContent = count;
+  //numberDisplay.textContent = userBoxElement.value;
+  numberDisplay.textContent = userTextInput
+  console.log(userTextInput)
+  //checkUserInput(userTextInput);
 });
+
