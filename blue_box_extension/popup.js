@@ -5,12 +5,7 @@ const userBoxElement = document.getElementById("wordBox");
 // On screen counter variable
 let count = 0;
 
-let userTextInput = userBoxElement.value
-
 function checkUserInput(word) {
-  console.log("running function, word: " + userTextInput);
-  console.log(typeof userTextInput)
-  console.log(word)
   let wordLength = word.length;
   console.log("the word length is: " + wordLength);
   if (word.length > 5) {
@@ -21,11 +16,12 @@ function checkUserInput(word) {
 
 // When the button is clicked
 clickMeButton.addEventListener("click", () => {
+  let userTextInput = userBoxElement.value
   count++;
   //numberDisplay.textContent = count;
   //numberDisplay.textContent = userBoxElement.value;
   numberDisplay.textContent = userTextInput
   console.log(userTextInput)
-  //checkUserInput(userTextInput);
+  checkUserInput(userTextInput);
 });
 
