@@ -12,4 +12,3 @@ clickMeButton.addEventListener("click", () => {
   feedbackDisplayElement.textContent = "Your feedback was " + userFeedback;
   console.log(userGuess);
 });
-
