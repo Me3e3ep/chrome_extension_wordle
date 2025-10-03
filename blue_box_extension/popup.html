@@ -7,11 +7,18 @@
   </head>
   <body>
     <div class="box">
-      <button id="myButton">Click me</button>
         <div class="userInput">
-          <input type="text" id="wordBox">
+          <div id="wordInput">
+            <input type="text" id="guessBox" placeholder="Your Guess" maxlength="5" class="letter-box">
+          </div>
+          <div id="feedbackInput">
+            <input type="text" id="feedbackBox" placeholder="Result of Guess" maxlength="5" class="letter-box">
+          </div>
         </div>
-      <span id="number">0</span>
+      <span>You should should guess: ...</span>
+      <div id="guessDisplay"></div>
+      <div id="feedbackDisplay"></div>
+      <button id="clickMeButton">Click me</button>
     </div>
     <script src="popup.js"></script>
   </body>
